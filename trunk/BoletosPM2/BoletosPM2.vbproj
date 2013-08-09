@@ -26,7 +26,7 @@
     <ProductName>BoletosPM</ProductName>
     <PublisherName>Paper&amp;More</PublisherName>
     <SuiteName>Paper&amp;More</SuiteName>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

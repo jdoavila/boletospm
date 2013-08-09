@@ -20,6 +20,7 @@ Partial Public Class BoletosReport
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
+        Me.XrLabel13 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel14 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel11 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLine4 = New DevExpress.XtraReports.UI.XRLine()
@@ -42,7 +43,6 @@ Partial Public Class BoletosReport
         Me.BoletosPM2DataSet1 = New BoletosPM2.BoletosPM2DataSet()
         Me.BoletosTableAdapter = New BoletosPM2.BoletosPM2DataSetTableAdapters.BoletosTableAdapter()
         Me.SP_ImprimirBoletosTableAdapter = New BoletosPM2.BoletosPM2DataSetTableAdapters.SP_ImprimirBoletosTableAdapter()
-        Me.XrLabel13 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me.BoletosPM2DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         '
@@ -53,6 +53,20 @@ Partial Public Class BoletosReport
         Me.Detail.Name = "Detail"
         Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100.0!)
         Me.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+        '
+        'XrLabel13
+        '
+        Me.XrLabel13.CanShrink = True
+        Me.XrLabel13.Font = New System.Drawing.Font("Times New Roman", 11.0!)
+        Me.XrLabel13.LocationFloat = New DevExpress.Utils.PointFloat(9.999983!, 76.8334!)
+        Me.XrLabel13.Multiline = True
+        Me.XrLabel13.Name = "XrLabel13"
+        Me.XrLabel13.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel13.SizeF = New System.Drawing.SizeF(280.0!, 39.66669!)
+        Me.XrLabel13.StylePriority.UseFont = False
+        Me.XrLabel13.StylePriority.UseTextAlignment = False
+        Me.XrLabel13.Text = "SORTEO DE 10 MEMORIAS USB 8 GB SEMANALES"
+        Me.XrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
         '
         'XrLabel14
         '
@@ -267,20 +281,6 @@ Partial Public Class BoletosReport
         '
         Me.SP_ImprimirBoletosTableAdapter.ClearBeforeFill = True
         '
-        'XrLabel13
-        '
-        Me.XrLabel13.CanShrink = True
-        Me.XrLabel13.Font = New System.Drawing.Font("Times New Roman", 11.0!)
-        Me.XrLabel13.LocationFloat = New DevExpress.Utils.PointFloat(9.999983!, 76.8334!)
-        Me.XrLabel13.Multiline = True
-        Me.XrLabel13.Name = "XrLabel13"
-        Me.XrLabel13.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel13.SizeF = New System.Drawing.SizeF(280.0!, 39.66669!)
-        Me.XrLabel13.StylePriority.UseFont = False
-        Me.XrLabel13.StylePriority.UseTextAlignment = False
-        Me.XrLabel13.Text = "SORTEO DE 10 MEMORIAS USB 8 GB SEMANALES"
-        Me.XrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
-        '
         'BoletosReport
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin})
@@ -288,7 +288,7 @@ Partial Public Class BoletosReport
         Me.DataMember = "SP_ImprimirBoletos"
         Me.DataSource = Me.BoletosPM2DataSet1
         Me.Margins = New System.Drawing.Printing.Margins(0, 0, 0, 0)
-        Me.PageHeight = 450
+        Me.PageHeight = 520
         Me.PageWidth = 300
         Me.PaperKind = System.Drawing.Printing.PaperKind.Custom
         Me.ScriptLanguage = DevExpress.XtraReports.ScriptLanguage.VisualBasic
