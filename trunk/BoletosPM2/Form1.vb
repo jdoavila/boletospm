@@ -98,7 +98,7 @@ Public Class Form1
     End Sub
 
     Private Function CalCantBol()
-        Dim CantBol As Integer = Math.Round(CDbl(Me.txtCantBoletos.Text) / 250)
+        Dim CantBol As Integer = Math.Round(CDbl(Me.txtCantBoletos.Text) / 500)
 
         Return CantBol
     End Function
